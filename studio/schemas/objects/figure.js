@@ -3,16 +3,16 @@ export default {
   title: 'Image',
   type: 'image',
   options: {
-    hotspot: true,
+    hotspot: true
   },
   fields: [
     {
-      title: 'Caption',
       name: 'caption',
       type: 'string',
+      title: 'Caption',
       options: {
-        isHighlighted: true,
-      },
+        isHighlighted: true
+      }
     },
     {
       name: 'alt',
@@ -20,14 +20,14 @@ export default {
       title: 'Alternative text',
       description: 'Important for SEO and accessiblity.',
       options: {
-        isHighlighted: true,
-      },
-    },
+        isHighlighted: true
+      }
+    }
   ],
   preview: {
     select: {
       imageUrl: 'asset.url',
-      title: 'caption',
-    },
-  },
-};
+      title: 'caption'
+    }
+  }
+}
