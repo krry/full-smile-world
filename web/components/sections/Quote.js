@@ -1,5 +1,6 @@
 // Quote.js
 import React from 'react'
+import PropTypes from 'prop-types'
 import imageUrlBuilder from '@sanity/image-url'
 import client from '../../client'
 import styles from './Quote.module.css'
@@ -33,3 +34,10 @@ function Quote ({name, photo, quote}) {
 }
 
 export default Quote
+
+Quote.propTypes = {
+  alt: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  photo: PropTypes.object,
+  quote: PropTypes.string.isRequired
+}
